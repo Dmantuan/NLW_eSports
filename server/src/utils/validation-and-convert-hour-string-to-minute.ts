@@ -9,7 +9,6 @@ export function convertHourStringToMinute(hourString: string){
         }
         else{
             const minutesAmount = (hours*60) + minutes;
-            console.log(minutesAmount);
             return minutesAmount;
         }
     }

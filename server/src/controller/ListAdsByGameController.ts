@@ -12,7 +12,7 @@ export class ListAdsByGameController {
                     name: true,
                     weekDays: true,
                     useVoiceChannel: true,
-                    playerAge: true,
+                    yearsPlaying: true,
                     hourEnd: true,
                     hourStart: true,
                 },
