@@ -1,5 +1,5 @@
 import { prisma } from "../CLI/prisma";
-import { request, Request, Response } from "express";
+import { Request, Response } from "express";
 import { convertHourStringToMinute } from "../utils/validation-and-convert-hour-string-to-minute";
 import { z } from "zod";
 
@@ -46,7 +46,6 @@ export class CreateAdController{
 
             const adValid = adSchema.safeParse(adBuilding);
 
-            console.log(adValid);
             if(!adValid.success){
                 await prisma.ad.create({
                     data: {
